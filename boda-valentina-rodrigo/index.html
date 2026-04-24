@@ -97,6 +97,9 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 .ornament--bg2dk{background:linear-gradient(to bottom,var(--bg) 0%,var(--dark) 100%)}
 .ornament--dk2s{background:linear-gradient(to bottom,var(--dark) 0%,var(--surface) 100%)}
 .ornament svg{width:260px;height:44px}
+.ornament svg line{stroke-width:1.3;opacity:.65}
+.ornament svg path{opacity:.7}
+.ornament svg circle{opacity:.65}
 
 /* COUNTDOWN */
 #countdown{padding:80px 28px;background:var(--bg);text-align:center}
@@ -198,13 +201,16 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 /* GALERÍA */
 #galeria{padding:80px 0 100px;background:var(--bg);text-align:center;overflow:hidden}
 #galeria .eyebrow,#galeria .script-title,#galeria .section-sub{padding:0 28px}
-.drop-stage{position:relative;height:460px;margin-top:28px;overflow:visible}
-.drop-photo{position:absolute;width:220px;height:290px;background:var(--card);border-radius:3px;padding:10px 10px 40px;box-shadow:0 8px 30px rgba(42,17,32,.12);left:50%;opacity:0;will-change:transform,opacity;cursor:pointer;transition:box-shadow .3s}
+.drop-stage{position:relative;height:600px;margin-top:28px;overflow:visible}
+.drop-photo{position:absolute;width:195px;height:258px;background:var(--card);border-radius:3px;padding:9px 9px 36px;box-shadow:0 8px 30px rgba(42,17,32,.12);left:50%;opacity:0;will-change:transform,opacity;cursor:pointer;transition:box-shadow .3s}
 .drop-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:2px;display:block;pointer-events:none}
-.drop-photo-label{position:absolute;bottom:10px;left:0;right:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);text-align:center;opacity:.65}
-.drop-photo-1{margin-left:-140px;top:10px}
-.drop-photo-2{margin-left:-100px;top:20px}
-.drop-photo-3{margin-left:-60px;top:5px}
+.drop-photo-label{position:absolute;bottom:9px;left:0;right:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);text-align:center;opacity:.65}
+.drop-photo-1{margin-left:-185px;top:10px}
+.drop-photo-2{margin-left:-130px;top:120px}
+.drop-photo-3{margin-left:-65px;top:15px}
+.drop-photo-4{margin-left:-5px;top:130px}
+.drop-photo-5{margin-left:55px;top:20px}
+.drop-photo-6{margin-left:110px;top:115px}
 .drop-photo.focused{z-index:10!important}
 .drop-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);opacity:.5;margin-top:14px;display:block;padding:0 28px}
 
@@ -229,9 +235,18 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 /* ALBUM */
 #album{padding:80px 28px;text-align:center;background:var(--surface)}
 .album-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;line-height:1.8;color:var(--dark);max-width:320px;margin:16px auto 32px}
-.album-qr-wrap{display:inline-flex;flex-direction:column;align-items:center;gap:14px;background:var(--card);border-radius:22px;padding:26px;box-shadow:0 6px 28px rgba(42,17,32,.07);border:1px solid rgba(155,79,104,.1)}
-.album-qr-wrap img{width:180px;height:180px;border-radius:10px;display:block}
-.qr-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent)}
+.album-qr-wrap{display:inline-flex;flex-direction:column;align-items:center;gap:18px;background:var(--dark);border-radius:6px;padding:32px 28px;box-shadow:0 14px 52px rgba(42,17,32,.28),inset 0 1px 0 rgba(200,137,90,.18);border:1px solid rgba(200,137,90,.4);position:relative}
+.album-qr-wrap::before,.album-qr-wrap::after{content:'';position:absolute;width:22px;height:22px;border-color:var(--copper);border-style:solid}
+.album-qr-wrap::before{top:10px;left:10px;border-width:2px 0 0 2px}
+.album-qr-wrap::after{bottom:10px;right:10px;border-width:0 2px 2px 0}
+.qr-corner-extra{position:absolute;width:22px;height:22px;border-color:var(--copper);border-style:solid}
+.qr-corner-extra.tr{top:10px;right:10px;border-width:2px 2px 0 0}
+.qr-corner-extra.bl{bottom:10px;left:10px;border-width:0 0 2px 2px}
+.album-qr-wrap img{width:190px;height:190px;border-radius:4px;display:block;box-shadow:0 4px 20px rgba(0,0,0,.35)}
+.qr-deco-line{display:flex;align-items:center;gap:8px;width:190px}
+.qr-deco-line::before,.qr-deco-line::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(200,137,90,.55),transparent)}
+.qr-deco-line span{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(200,137,90,.75);white-space:nowrap}
+.qr-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(245,212,218,.7)}
 
 /* RSVP */
 #rsvp{padding:80px 28px;background:var(--bg);text-align:center}
@@ -723,6 +738,18 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
         <img src="foto3.jpg" alt="Valentina &amp; Rodrigo">
         <span class="drop-photo-label">Para siempre</span>
       </div>
+      <div class="drop-photo drop-photo-4" id="dropP4">
+        <img src="foto4.jpg" alt="Valentina &amp; Rodrigo">
+        <span class="drop-photo-label">Juntos siempre</span>
+      </div>
+      <div class="drop-photo drop-photo-5" id="dropP5">
+        <img src="foto5.jpg" alt="Valentina &amp; Rodrigo">
+        <span class="drop-photo-label">Nuestra historia</span>
+      </div>
+      <div class="drop-photo drop-photo-6" id="dropP6">
+        <img src="foto6.jpg" alt="Valentina &amp; Rodrigo">
+        <span class="drop-photo-label">El gran día</span>
+      </div>
     </div>
     <span class="drop-hint rv" id="dropHint">Toca cada foto para enfocarla</span>
   </section>
@@ -781,7 +808,10 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     <h2 class="script-title rv">Álbum Compartido</h2>
     <p class="album-note rv">¡Queremos ver la boda a través de tus ojos! Escanea el código y sube tus fotos al álbum compartido.</p>
     <div class="album-qr-wrap rv">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=360x360&color=2A1120&bgcolor=FFFBFC&margin=18&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1-URIICWXKLXudTlNamjNwKlC5FjCfcSy%3Fusp%3Dsharing" alt="QR Álbum de fotos">
+      <div class="qr-corner-extra tr"></div>
+      <div class="qr-corner-extra bl"></div>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=380x380&color=F5D4DA&bgcolor=2A1120&qzone=2&format=png&data=https%3A%2F%2Fdrive.google.com%2Fdrive%2Ffolders%2F1-URIICWXKLXudTlNamjNwKlC5FjCfcSy%3Fusp%3Dsharing" alt="QR Álbum de fotos">
+      <div class="qr-deco-line"><span>❧ Álbum compartido ❧</span></div>
       <span class="qr-label">Escanea para subir tus fotos</span>
     </div>
   </section>
@@ -1014,12 +1044,15 @@ function initAll(){
 
   /* ── GALERÍA: FOTOS QUE CAEN ── */
   (function(){
-    const finalRotations=[-6,2.5,-2];
-    const finalOffsets=[-140,-100,-60]; /* margin-left para cada foto */
+    const finalRotations=[-7,3.5,-4,5,-2.5,4];
+    const finalOffsets=[-185,-130,-65,-5,55,110];
     const photos=[
       {el:document.getElementById('dropP1'),rot:finalRotations[0],ox:finalOffsets[0]},
       {el:document.getElementById('dropP2'),rot:finalRotations[1],ox:finalOffsets[1]},
       {el:document.getElementById('dropP3'),rot:finalRotations[2],ox:finalOffsets[2]},
+      {el:document.getElementById('dropP4'),rot:finalRotations[3],ox:finalOffsets[3]},
+      {el:document.getElementById('dropP5'),rot:finalRotations[4],ox:finalOffsets[4]},
+      {el:document.getElementById('dropP6'),rot:finalRotations[5],ox:finalOffsets[5]},
     ];
 
     ScrollTrigger.create({
