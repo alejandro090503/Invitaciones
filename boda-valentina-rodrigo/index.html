@@ -87,19 +87,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 .fecha-lbl{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(224,184,138,.45);margin-top:3px}
 .fecha-sep{width:1px;height:38px;background:linear-gradient(to bottom,transparent,var(--copper),transparent);opacity:.35}
 
-/* ORNAMENTS */
-.ornament{display:flex;justify-content:center;align-items:center;padding:14px 0;background:var(--bg)}
-.ornament--surface{background:var(--surface)}
-.ornament--dark{background:var(--dark)}
-.ornament--dk2bg{background:linear-gradient(to bottom,var(--dark) 0%,var(--bg) 100%)}
-.ornament--bg2s{background:linear-gradient(to bottom,var(--bg) 0%,var(--surface) 100%)}
-.ornament--s2bg{background:linear-gradient(to bottom,var(--surface) 0%,var(--bg) 100%)}
-.ornament--bg2dk{background:linear-gradient(to bottom,var(--bg) 0%,var(--dark) 100%)}
-.ornament--dk2s{background:linear-gradient(to bottom,var(--dark) 0%,var(--surface) 100%)}
-.ornament svg{width:260px;height:44px}
-.ornament svg line{stroke-width:1.3;opacity:.65}
-.ornament svg path{opacity:.7}
-.ornament svg circle{opacity:.65}
 
 /* COUNTDOWN */
 #countdown{padding:80px 28px;background:var(--bg);text-align:center}
@@ -201,16 +188,16 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
 /* GALERÍA */
 #galeria{padding:80px 0 100px;background:var(--bg);text-align:center;overflow:hidden}
 #galeria .eyebrow,#galeria .script-title,#galeria .section-sub{padding:0 28px}
-.drop-stage{position:relative;height:600px;margin-top:28px;overflow:visible}
-.drop-photo{position:absolute;width:195px;height:258px;background:var(--card);border-radius:3px;padding:9px 9px 36px;box-shadow:0 8px 30px rgba(42,17,32,.12);left:50%;opacity:0;will-change:transform,opacity;cursor:pointer;transition:box-shadow .3s}
+.drop-stage{position:relative;height:360px;margin-top:28px;overflow:visible}
+.drop-photo{position:absolute;width:112px;height:150px;background:var(--card);border-radius:3px;padding:7px 7px 30px;box-shadow:0 8px 30px rgba(42,17,32,.12);left:50%;opacity:0;will-change:transform,opacity;cursor:pointer;transition:box-shadow .3s}
 .drop-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:2px;display:block;pointer-events:none}
-.drop-photo-label{position:absolute;bottom:9px;left:0;right:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);text-align:center;opacity:.65}
-.drop-photo-1{margin-left:-185px;top:10px}
-.drop-photo-2{margin-left:-130px;top:120px}
-.drop-photo-3{margin-left:-65px;top:15px}
-.drop-photo-4{margin-left:-5px;top:130px}
-.drop-photo-5{margin-left:55px;top:20px}
-.drop-photo-6{margin-left:110px;top:115px}
+.drop-photo-label{position:absolute;bottom:7px;left:0;right:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--accent);text-align:center;opacity:.65}
+.drop-photo-1{margin-left:-172px;top:8px}
+.drop-photo-2{margin-left:-58px;top:115px}
+.drop-photo-3{margin-left:56px;top:4px}
+.drop-photo-4{margin-left:-172px;top:118px}
+.drop-photo-5{margin-left:-58px;top:6px}
+.drop-photo-6{margin-left:56px;top:120px}
 .drop-photo.focused{z-index:10!important}
 .drop-hint{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--accent);opacity:.5;margin-top:14px;display:block;padding:0 28px}
 
@@ -345,19 +332,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     </div>
   </div>
 
-  <!-- ORNAMENT: chevrons art deco dk→bg -->
-  <div class="ornament ornament--dk2bg rv">
-    <svg viewBox="0 0 260 44" fill="none">
-      <line x1="10" y1="22" x2="90" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".3"/>
-      <path d="M96 14L104 22L96 30" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <path d="M104 14L112 22L104 30" stroke="#C8895A" stroke-width=".7" fill="none" opacity=".22"/>
-      <path d="M116 10L130 22L116 34L102 22Z" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".42"/>
-      <path d="M156 14L148 22L156 30" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <path d="M148 14L140 22L148 30" stroke="#C8895A" stroke-width=".7" fill="none" opacity=".22"/>
-      <line x1="170" y1="22" x2="250" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".3"/>
-      <circle cx="130" cy="22" r="2.5" fill="#C8895A" opacity=".35"/>
-    </svg>
-  </div>
 
   <!-- COUNTDOWN -->
   <section id="countdown" class="sec rv">
@@ -412,20 +386,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     </div>
   </section>
 
-  <!-- ORNAMENT: fans -->
-  <div class="ornament rv">
-    <svg viewBox="0 0 260 44" fill="none">
-      <line x1="10" y1="22" x2="74" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-      <path d="M86 40L86 22M86 40L78 26M86 40L94 26M86 40L72 32M86 40L100 32M86 40L65 40M86 40L107 40" stroke="#9B4F68" stroke-width=".8" opacity=".32"/>
-      <path d="M65 20Q75 15 86 18Q97 15 107 20" stroke="#9B4F68" stroke-width=".7" fill="none" opacity=".28"/>
-      <path d="M68 13Q77 7 86 10Q95 7 104 13" stroke="#9B4F68" stroke-width=".5" fill="none" opacity=".2"/>
-      <path d="M118 10L130 22L118 34L106 22Z" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".42"/>
-      <circle cx="130" cy="22" r="2" fill="#C8895A" opacity=".3"/>
-      <path d="M174 40L174 22M174 40L166 26M174 40L182 26M174 40L160 32M174 40L188 32M174 40L153 40M174 40L195 40" stroke="#9B4F68" stroke-width=".8" opacity=".32"/>
-      <path d="M153 20Q163 15 174 18Q185 15 195 20" stroke="#9B4F68" stroke-width=".7" fill="none" opacity=".28"/>
-      <line x1="186" y1="22" x2="250" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-    </svg>
-  </div>
 
   <!-- QUOTE -->
   <section id="quote">
@@ -449,19 +409,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     <div class="quote-bar rv"></div>
   </section>
 
-  <!-- ORNAMENT dk→bg: arrows -->
-  <div class="ornament ornament--dk2bg rv">
-    <svg viewBox="0 0 260 44" fill="none">
-      <line x1="10" y1="22" x2="100" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-      <path d="M106 14L114 22L106 30" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <path d="M114 14L122 22L114 30" stroke="#C8895A" stroke-width=".7" fill="none" opacity=".22"/>
-      <circle cx="130" cy="22" r="5" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <circle cx="130" cy="22" r="2" fill="#C8895A" opacity=".28"/>
-      <path d="M146 14L138 22L146 30" stroke="#C8895A" stroke-width=".7" fill="none" opacity=".22"/>
-      <path d="M154 14L146 22L154 30" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <line x1="160" y1="22" x2="250" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-    </svg>
-  </div>
 
   <!-- FAMILIARES -->
   <section id="familiares" class="rv">
@@ -488,20 +435,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     </div>
   </section>
 
-  <!-- ORNAMENT bg→surface: fans -->
-  <div class="ornament ornament--bg2s rv">
-    <svg viewBox="0 0 260 44" fill="none">
-      <line x1="10" y1="22" x2="80" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-      <path d="M90 40L90 22M90 40L82 26M90 40L98 26M90 40L74 32M90 40L106 32" stroke="#9B4F68" stroke-width=".8" opacity=".3"/>
-      <path d="M74 20Q82 14 90 17Q98 14 106 20" stroke="#9B4F68" stroke-width=".6" fill="none" opacity=".25"/>
-      <line x1="118" y1="22" x2="132" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".2"/>
-      <path d="M122 16L130 22L122 28L114 22Z" stroke="#C8895A" stroke-width=".8" fill="none" opacity=".38"/>
-      <circle cx="130" cy="22" r="2" fill="#C8895A" opacity=".28"/>
-      <path d="M170 40L170 22M170 40L162 26M170 40L178 26M170 40L154 32M170 40L186 32" stroke="#9B4F68" stroke-width=".8" opacity=".3"/>
-      <path d="M154 20Q162 14 170 17Q178 14 186 20" stroke="#9B4F68" stroke-width=".6" fill="none" opacity=".25"/>
-      <line x1="180" y1="22" x2="250" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-    </svg>
-  </div>
 
   <!-- UBICACION -->
   <section id="ubicacion">
@@ -565,19 +498,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     </div>
   </section>
 
-  <!-- ORNAMENT s→bg diamonds -->
-  <div class="ornament ornament--s2bg rv">
-    <svg viewBox="0 0 260 44" fill="none">
-      <line x1="10" y1="22" x2="88" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-      <path d="M94 14L104 22L94 30L84 22Z" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <path d="M108 17L116 22L108 27L100 22Z" stroke="#C8895A" stroke-width=".7" fill="none" opacity=".22"/>
-      <circle cx="130" cy="22" r="6" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".35"/>
-      <circle cx="130" cy="22" r="2.5" fill="#C8895A" opacity=".28"/>
-      <path d="M152 17L160 22L152 27L144 22Z" stroke="#C8895A" stroke-width=".7" fill="none" opacity=".22"/>
-      <path d="M166 14L176 22L166 30L156 22Z" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <line x1="172" y1="22" x2="250" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-    </svg>
-  </div>
 
   <!-- ITINERARIO -->
   <section id="itinerario" class="sec rv">
@@ -653,19 +573,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     </div>
   </section>
 
-  <!-- ORNAMENT mixed -->
-  <div class="ornament rv">
-    <svg viewBox="0 0 260 44" fill="none">
-      <line x1="10" y1="22" x2="80" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-      <path d="M86 12L98 22L86 32" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <path d="M98 12L110 22L98 32" stroke="#C8895A" stroke-width=".7" fill="none" opacity=".22"/>
-      <path d="M116 10L130 22L116 34L102 22Z" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".4"/>
-      <path d="M144 12L132 22L144 32" stroke="#C8895A" stroke-width=".7" fill="none" opacity=".22"/>
-      <path d="M156 12L144 22L156 32" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <line x1="180" y1="22" x2="250" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-      <circle cx="130" cy="22" r="2" fill="#C8895A" opacity=".32"/>
-    </svg>
-  </div>
 
   <!-- DRESS CODE -->
   <section id="dresscode" class="sec">
@@ -707,18 +614,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     </div>
   </section>
 
-  <!-- ORNAMENT bg→dark -->
-  <div class="ornament ornament--bg2dk rv">
-    <svg viewBox="0 0 260 44" fill="none">
-      <line x1="10" y1="22" x2="80" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-      <path d="M90 38L90 10M90 38L80 16M90 38L100 16M90 38L70 24M90 38L110 24M90 38L60 36M90 38L120 36" stroke="#9B4F68" stroke-width=".8" opacity=".3"/>
-      <path d="M60 10Q75 4 90 8Q105 4 120 10" stroke="#9B4F68" stroke-width=".7" fill="none" opacity=".25"/>
-      <path d="M65 4Q77 -1 90 2Q103 -1 115 4" stroke="#9B4F68" stroke-width=".5" fill="none" opacity=".18"/>
-      <path d="M136 10L148 22L136 34L124 22Z" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".4"/>
-      <circle cx="136" cy="22" r="2" fill="#C8895A" opacity=".28"/>
-      <line x1="160" y1="22" x2="250" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-    </svg>
-  </div>
 
   <!-- GALERÍA -->
   <section id="galeria">
@@ -754,17 +649,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     <span class="drop-hint rv" id="dropHint">Toca cada foto para enfocarla</span>
   </section>
 
-  <!-- ORNAMENT bg→dark -->
-  <div class="ornament ornament--bg2dk rv">
-    <svg viewBox="0 0 260 44" fill="none">
-      <line x1="10" y1="22" x2="100" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-      <path d="M106 14L116 22L106 30" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <circle cx="130" cy="22" r="7" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".35"/>
-      <circle cx="130" cy="22" r="3" fill="#C8895A" opacity=".28"/>
-      <path d="M154 14L144 22L154 30" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <line x1="160" y1="22" x2="250" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-    </svg>
-  </div>
 
   <!-- REGALOS -->
   <section id="regalos">
@@ -789,18 +673,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     </div>
   </section>
 
-  <!-- ORNAMENT dark→surface -->
-  <div class="ornament ornament--dk2s rv">
-    <svg viewBox="0 0 260 44" fill="none">
-      <line x1="10" y1="22" x2="84" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".25"/>
-      <path d="M90 12L102 22L90 32L78 22Z" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".35"/>
-      <path d="M116 16L126 22L116 28L106 22Z" stroke="#C8895A" stroke-width=".7" fill="none" opacity=".22"/>
-      <circle cx="130" cy="22" r="3.5" fill="#C8895A" opacity=".28"/>
-      <path d="M144 16L154 22L144 28L134 22Z" stroke="#C8895A" stroke-width=".7" fill="none" opacity=".22"/>
-      <path d="M170 12L182 22L170 32L158 22Z" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".35"/>
-      <line x1="176" y1="22" x2="250" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".25"/>
-    </svg>
-  </div>
 
   <!-- ÁLBUM -->
   <section id="album">
@@ -816,17 +688,6 @@ body{background:var(--bg);color:var(--text);font-family:'Jost',sans-serif;font-w
     </div>
   </section>
 
-  <!-- ORNAMENT s→bg -->
-  <div class="ornament ornament--s2bg rv">
-    <svg viewBox="0 0 260 44" fill="none">
-      <line x1="10" y1="22" x2="90" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-      <path d="M96 14L106 22L96 30L86 22Z" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <circle cx="130" cy="22" r="6" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".35"/>
-      <circle cx="130" cy="22" r="2.5" fill="#C8895A" opacity=".28"/>
-      <path d="M164 14L174 22L164 30L154 22Z" stroke="#C8895A" stroke-width=".9" fill="none" opacity=".38"/>
-      <line x1="170" y1="22" x2="250" y2="22" stroke="#C8895A" stroke-width=".7" opacity=".28"/>
-    </svg>
-  </div>
 
   <!-- RSVP -->
   <section id="rsvp" class="sec">
@@ -1044,8 +905,8 @@ function initAll(){
 
   /* ── GALERÍA: FOTOS QUE CAEN ── */
   (function(){
-    const finalRotations=[-7,3.5,-4,5,-2.5,4];
-    const finalOffsets=[-185,-130,-65,-5,55,110];
+    const finalRotations=[-6,3,-5,4,-2,5];
+    const finalOffsets=[-172,-58,56,-172,-58,56];
     const photos=[
       {el:document.getElementById('dropP1'),rot:finalRotations[0],ox:finalOffsets[0]},
       {el:document.getElementById('dropP2'),rot:finalRotations[1],ox:finalOffsets[1]},
